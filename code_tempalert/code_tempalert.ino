@@ -28,7 +28,7 @@ void loop() {
   Serial.println(rgb[2]);
   ColorLED.setPixelColor(0, ColorLED.Color(rgb[0], rgb[1], rgb[2]));
   ColorLED.show();
-  if (temp >= 37.2)alert = true;
+  if (temp >= 38.0)alert = true;//超过38度报警
   else alert = false;
   if (alert) {
     if (index >= 0 && index < 1200) {
