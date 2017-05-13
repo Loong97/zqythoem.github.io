@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="shortcut icon" href="assets/img/favicon.ico">
+<title>云宠小镇</title>
+
+<!-- load stylesheets -->
+
+<link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/css/templatemo-style.css">
+
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+<div class="container-fluid">
+	
+	<div class="row"> 
+
+		<section class="tm-section-intro">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+				<div class="tm-wrapper-center">
+					<h1 class="tm-section-intro-title">云宠小镇</h1>
+					<p class="tm-section-intro-text">Mentor: Game Interactive Technologies 2017<br>
+					Zhang Zelong from Tsinghua University
+					</p>
+					<a href="https://zqythoem.github.io/downloads/pettyTown.apk" class="tm-btn-white-big">下载</a>
+				</div>            
+			</div>
+		</section>    
+
+	</div>
+
+	<div class="row" id="tm-section-2">
+		
+		<section class="tm-2-col-img-text tm-2-col-img-lg-right">
+			
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-img">                    
+				<video alt="Image" class="img-fluid" controls>
+					<source src="assets/video/video1_music.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-text">
+				<h2 class="tm-2-col-text-title">Music Player</h2>
+				<p class="tm-2-col-text-description">
+					This music player stores the tone and length of the song inside its code, and plays the corresponding track by controlling the buzzer. The repertoire presented in this example is Beethoven's "Ode to Joy".
+				</p>
+				<a href="https://github.com/zqythoem/zqythoem.github.io/blob/master/arduino/code_music/code_music.ino" class="tm-bordered-btn">Source Code</a>
+			</div>
+			
+		</section>
+
+	</div> <!-- row -->
+
+	<div class="row">
+		
+		<section class="tm-2-col-img-text tm-2-col-img-lg-left">
+			
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-img">                    
+				<video alt="Image" class="img-fluid" controls>
+					<source src="assets/video/video2_light.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-text">
+				<h2 class="tm-2-col-text-title">Sound and Light Control Lights</h2>
+				<p class="tm-2-col-text-description">
+					This street lamp will only open when the light is dark and the microphone receives the sound. Every time the opening will last for some time.
+				</p>
+				<a href="https://github.com/zqythoem/zqythoem.github.io/blob/master/arduino/code_light/code_light.ino" class="tm-bordered-btn">Source Code</a>
+			</div>
+			
+		</section>
+
+	</div> <!-- row -->
+
+	<div class="row">
+		
+		<section class="tm-2-col-img-text tm-2-col-img-lg-right">
+			
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-img">                    
+				<video alt="Image" class="img-fluid" controls>
+					<source src="assets/video/video3_tempalert.mp4" type="video/mp4">
+				</video>
+			</div>
+
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 tm-2-col-text">
+				<h2 class="tm-2-col-text-title">Body Temperature Alarm</h2>
+				<p class="tm-2-col-text-description">
+					This thermometer can measure body temperature. In the normal temperature threshold, LED lights will change the color according to the level of temperature. When the question is too high, the buzzer will alarm.
+				</p>
+				<a href="https://github.com/zqythoem/zqythoem.github.io/blob/master/arduino/code_tempalert/code_tempalert.ino" class="tm-bordered-btn">Source Code</a>
+			</div>
+			
+		</section>
+
+	</div> <!-- row -->
+
+	<div class="row">                
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">                    
+			<hr>
+		</div>
+	</div>
+	
+</div> <!-- container-fluid -->   
+
+<!-- load JS files -->
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/tether.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/jquery.touchSwipe.min.js"></script>
+
+<script>     
+
+	$(document).ready(function(){
+
+		$('a[href*="#"]:not([href="#"])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+				&& location.hostname == this.hostname) {
+				
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				
+				if (target.length) {
+					
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 1000);
+					return false;
+				}
+			}
+		}); 
+		
+		if($(window).width() <= 991) {
+			$(".carousel-inner").swipe( {
+				//Generic swipe handler for all directions
+				swipeLeft:function(event, direction, distance, duration, fingerCount) {
+					$(this).parent().carousel('next'); 
+				},
+				swipeRight: function() {
+					$(this).parent().carousel('prev'); 
+				},
+				//Default is 75px, set to 0 for demo so any distance triggers swipe
+				threshold:0
+			});
+		}  
+
+		/* Handle window resize */
+		$(window).resize(function(){
+			if($(window).width() <= 991) {
+				$(".carousel-inner").swipe( {
+					//Generic swipe handler for all directions
+					swipeLeft:function(event, direction, distance, duration, fingerCount) {
+						$(this).parent().carousel('next'); 
+					},
+					swipeRight: function() {
+						$(this).parent().carousel('prev'); 
+					},
+					//Default is 75px, set to 0 for demo so any distance triggers swipe
+					threshold:0
+				});
+			 }
+		});              
+				   
+	});
+
+</script>             
+
+</body>
+</html>
